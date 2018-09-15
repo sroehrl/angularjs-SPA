@@ -1,0 +1,23 @@
+{
+  "name": "pfizer-strategy",
+  "authors": [
+    "sroehrl <sroehrl@eagleproductivity.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.7.4",
+    "angular-material": "^1.1.10",
+    "angular-ui-router": "^1.0.20"
+  }
+}
