@@ -12,7 +12,7 @@ let jsIncludes = [
 ];
 
 
-let runConfig = ['coffee','pug','sass','js','template','css'];
+let runConfig = ['coffee','pug','sass','js','template','css','index'];
 
 const gulp = require('gulp');
 const concat = require('gulp-concat');
@@ -33,6 +33,10 @@ gulp.task('base-pug',function(){
     return gulp.src('route/index.pug')
         .pipe(pug())
         .pipe(gulp.dest('route'));
+});
+gulp.task('index',function(){
+    return gulp.src('route/index.html')
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('coffee', function(){
